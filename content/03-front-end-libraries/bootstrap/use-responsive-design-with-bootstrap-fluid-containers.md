@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9acde08712
-title: Use Responsive Design with Bootstrap Fluid Containers
+title: Utilizar Design Responsivo com containers fluídos Bootstrap
 challengeType: 0
 forumTopicId: 18362
 dashedName: use-responsive-design-with-bootstrap-fluid-containers
@@ -8,29 +8,28 @@ dashedName: use-responsive-design-with-bootstrap-fluid-containers
 
 # --description--
 
-In the HTML5 and CSS section of freeCodeCamp we built a Cat Photo App. Now let's go back to it. This time, we'll style it using the popular Bootstrap responsive CSS framework.
+Na seção de HTML5 e CSS do freeCodeCamp, nós construímos um App de Fodos de gato. Agora vamos voltar para ele, Desta vez, nós vamos estilizá-lo usando o famoso framework Bootstrap CSS responsivo.
 
-Bootstrap will figure out how wide your screen is and respond by resizing your HTML elements - hence the name <dfn>responsive design</dfn>.
+Bootstrap descobrirá a largura da sua tela e responder redimensionando seus elementos HTML - daí o nome  <dfn>responsive design</dfn>.
 
-With responsive design, there is no need to design a mobile version of your website. It will look good on devices with screens of any width.
+Com o design responsivo, não há necessidade de uma versão mobile para o seu website. Ele irá ter boa aparência em dispositivos com qualquer largura de tela.
 
-You can add Bootstrap to any app by adding the following code to the top of your HTML:
+Você pode adicionar o Bootstrap a qualquer app adicionando o seguinte código no topo do seu HTML:
 
 `<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>`
 
-In this case, we've already added it for you to this page behind the scenes. Note that using either `>` or `/>` to close the `link` tag is acceptable.
-
-To get started, we should nest all of our HTML (except the `link` tag and the `style` element) in a `div` element with the class `container-fluid`.
+Neste caso, nós já adicionamos ele para você nesta página, nos bastidores. Note que usar tanto `>` quanto `/>` para fechar a tag `link` é aceitável.
+Para começar, nós devemos aninhar todo o nosso HTML (exceto a tag `link` e o elemento `style`) em um elemento `div` com a classe `container-fluid`.
 
 # --hints--
 
-Your `div` element should have the class `container-fluid`.
+Seu elemento `div` deve ter a classe `container-fluid`.
 
 ```js
 assert($('div').hasClass('container-fluid'));
 ```
 
-Your `div` element should have a closing tag.
+Seu elemento `div` deve ter uma tag de fechamento.
 
 ```js
 assert(
@@ -40,7 +39,7 @@ assert(
 );
 ```
 
-All HTML elements after the closing `style` tag should be nested in `.container-fluid`.
+Todos os elementos HTML depois da tag de fechamento `style` devem ser aninhados em `.container-fluid`.
 
 ```js
 assert($('.container-fluid').children().length >= 8);
@@ -80,30 +79,30 @@ assert($('.container-fluid').children().length >= 8);
 
 <h2 class="red-text">CatPhotoApp</h2>
 
-<p>Click here for <a href="#">cat photos</a>.</p>
+<p>Clique aqui para <a href="#">fotos de gato</a>.</p>
 
 <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
 
-<p>Things cats love:</p>
+<p>Coisas que gatos amam:</p>
 <ul>
-  <li>cat nip</li>
-  <li>laser pointers</li>
-  <li>lasagna</li>
+  <li>erva de gato</li>
+  <li>apontadores laser</li>
+  <li>lasanha</li>
 </ul>
-<p>Top 3 things cats hate:</p>
+<p>Top 3 coisas que gatos odeiam:</p>
 <ol>
-  <li>flea treatment</li>
-  <li>thunder</li>
-  <li>other cats</li>
+  <li>tratamento para pulgas</li>
+  <li>trovão</li>
+  <li>outros gatos</li>
 </ol>
 <form action="https://freecatphotoapp.com/submit-cat-photo">
-  <label><input type="radio" name="indoor-outdoor"> Indoor</label>
-  <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
-  <label><input type="checkbox" name="personality"> Loving</label>
-  <label><input type="checkbox" name="personality"> Lazy</label>
-  <label><input type="checkbox" name="personality"> Crazy</label>
+  <label><input type="radio" name="indoor-outdoor"> Interior</label>
+  <label><input type="radio" name="indoor-outdoor"> Exterior</label>
+  <label><input type="checkbox" name="personality"> Amoroso(a)</label>
+  <label><input type="checkbox" name="personality"> Preguiçoso(a)</label>
+  <label><input type="checkbox" name="personality"> Maluco(a)</label>
   <input type="text" placeholder="cat photo URL" required>
-  <button type="submit">Submit</button>
+  <button type="submit">Enviar</button>
 </form>
 ```
 
@@ -139,30 +138,30 @@ assert($('.container-fluid').children().length >= 8);
 <div class="container-fluid">
   <h2 class="red-text">CatPhotoApp</h2>
 
-<p>Click here for <a href="#">cat photos</a>.</p>
+<p>Clique aqui para <a href="#">fotos de gato</a>.</p>
 
 <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
 
-<p>Things cats love:</p>
+<p>Coisas que gatos amam:</p>
 <ul>
-  <li>cat nip</li>
-  <li>laser pointers</li>
-  <li>lasagna</li>
+  <li>erva de gato</li>
+  <li>apontadores laser</li>
+  <li>lasanha</li>
 </ul>
-<p>Top 3 things cats hate:</p>
+<p>Top 3 coisas que gatos odeiam:</p>
 <ol>
-  <li>flea treatment</li>
-  <li>thunder</li>
-  <li>other cats</li>
+  <li>tratamento para pulgas</li>
+  <li>trovão</li>
+  <li>outros gatos</li>
 </ol>
 <form action="https://freecatphotoapp.com/submit-cat-photo">
-  <label><input type="radio" name="indoor-outdoor"> Indoor</label>
-  <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
-  <label><input type="checkbox" name="personality"> Loving</label>
-  <label><input type="checkbox" name="personality"> Lazy</label>
-  <label><input type="checkbox" name="personality"> Crazy</label>
+  <label><input type="radio" name="indoor-outdoor"> Interior</label>
+  <label><input type="radio" name="indoor-outdoor"> Exterior</label>
+  <label><input type="checkbox" name="personality"> Amoroso(a)</label>
+  <label><input type="checkbox" name="personality"> Preguiçoso(a)</label>
+  <label><input type="checkbox" name="personality"> Maluco(a)</label>
   <input type="text" placeholder="cat photo URL" required>
-  <button type="submit">Submit</button>
+  <button type="submit">Enviar</button>
 </form>
 </div>
 ```
